@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,27 +13,45 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
 
-            {/* LOGO BOX — NO SVG */}
+            {/* LOGO BOX */}
             <div className="flex items-center space-x-3">
-              <div className="bg-yellow-500 rounded-xl p-3 shadow-md"></div>
-              <div>
-                <span className="text-2xl font-bold text-yellow-600">Secureyourpc</span>
-                <span className="text-xs text-gray-500 font-medium tracking-wide block">
-                  Security Solutions
-                </span>
-              </div>
+            
+             <div className="flex items-center space-x-3">
+
+  {/* IMAGE LOGO ADDED HERE */}
+  <Image 
+    src="/logo1.png"     // 👉 your logo path
+    alt="logo"
+    width={200}
+    height={200}
+    className="rounded-xl shadow-md"
+  />
+
+  <div>
+   
+    <span className="text-xs text-gray-500 font-medium tracking-wide block">
+     Authorised Reseller
+    </span>
+  </div>
+
+</div>
             </div>
 
             <p className="text-gray-600 leading-relaxed text-sm">
-              Secureyourpc provides reliable cybersecurity solutions that protect your devices
-              and personal information. We prevent malware, ransomware, and online threats.
+              EZ Tech Printer Solutions LLC is an Authorized Norton Empower Reseller specializing in providing genuine cybersecurity solutions and professional activation support.
             </p>
 
-            {/* ICONS REMOVED → Only Clean Boxes */}
+            {/* Icons Replaced With Images */}
             <div className="flex space-x-4">
-              <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-300"></div>
-              <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-300"></div>
-              <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-300"></div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-300">
+                <Image src="/insta.webp" alt="icon1" width={30} height={30} />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-300">
+                <Image src="/facebook.webp" alt="icon2" width={30} height={30} />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-300">
+                <Image src="/twitter.webp" alt="icon3" width={30} height={30} />
+              </div>
             </div>
           </div>
 
@@ -43,19 +63,19 @@ const Footer = () => {
               </h3>
               <ul className="space-y-4">
                 <li>
-                  <a className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                  <Link href="/disclaimer" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     Disclaimer
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                  <Link href="/privacy-policy" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                  <Link href="/refund-policy" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     Refund Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -66,24 +86,24 @@ const Footer = () => {
               </h3>
               <ul className="space-y-4">
                 <li>
-                  <a className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                  <Link href="/about" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                  <Link href="/contact" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                  <Link href="/" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     Checkout
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                  <Link href="/login" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     My Account
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -113,27 +133,35 @@ const Footer = () => {
                 </button>
               </div>
 
-              {/* No SVG → Clean Norton Box */}
+              {/* Norton Box Image */}
               <div className="bg-white p-4 rounded-lg border border-gray-300 shadow-sm">
-                <p className="text-sm font-semibold text-gray-900">No spam guaranteed</p>
+                <Image src="/logo1.png" alt="norton" width={100} height={40} />
+                <p className="text-sm font-semibold text-gray-900 mt-2">No spam guaranteed</p>
                 <p className="text-xs text-gray-500">Unsubscribe anytime</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Copyright */}
+        {/* Bottom Footer */}
         <div className="border-t border-gray-300 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">
-              © 2025 <span className="font-semibold text-yellow-600">Secure Your PC</span>.
+              © 2025 <span className="font-semibold text-yellow-600">EZ Tech Printer Solutions LLC</span>.
               All rights reserved.
             </p>
 
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a className="text-gray-600 hover:text-yellow-600 text-sm">Terms of Service</a>
-              <a className="text-gray-600 hover:text-yellow-600 text-sm">Privacy Policy</a>
-              <a className="text-gray-600 hover:text-yellow-600 text-sm">Cookie Policy</a>
+              <Link href="/terms-conditions" className="text-gray-600 hover:text-yellow-600 text-sm">
+                TERMS & CONDITIONS
+              </Link>
+              <Link href="/activation-installation" className="text-gray-600 hover:text-yellow-600 text-sm">
+                 ACTIVATION & INSTALLATION SUPPORT
+              </Link>
+               <Link href="/renewal" className="text-gray-600 hover:text-yellow-600 text-sm">
+                  RENEWAL
+              </Link>
+              
             </div>
           </div>
         </div>

@@ -359,6 +359,7 @@
 
 "use client";
 import { useCart } from "../context/CartContext";
+import Link from "next/link";
 
 export default function Cart() {
   const { cart, removeFromCart } = useCart();
@@ -408,9 +409,12 @@ export default function Cart() {
             <p className="text-gray-500 max-w-md mx-auto mb-8">
               Secure your devices today with Norton protection.
             </p>
-            <button className="bg-[#000000] text-[#FFD700] px-8 py-3 rounded-xl font-semibold hover:bg-[#111] transition-all duration-300 shadow-md">
-              Continue Shopping
-            </button>
+           
+<Link href="/">
+  <button className="bg-[#000000] text-[#FFD700] px-8 py-3 rounded-xl font-semibold hover:bg-[#111] transition-all duration-300 shadow-md">
+    Continue Shopping
+  </button>
+</Link>
           </div>
         ) : (
           <div className="flex flex-col lg:flex-row gap-8">

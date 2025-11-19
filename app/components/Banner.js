@@ -141,17 +141,16 @@ export default function Banner() {
             
             {/* Heading */}
             <h1 className="text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
-              Business.com's<br />
+               Choose the Perfect Norton<br />
               <span className="text-yellow-500">
-                #1 choice for small<br />
-                business security
+              
+                Security Plan for Your Needs
               </span>
             </h1>
             
             {/* Description */}
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Protect your business from cyberthreats with the easy-to-use, automated security solution recommended by business.com.
-            </p>
+              We offer the full range of Norton™ security subscriptions for individuals, families, and small businesses. All products are genuine and activated through your Norton account.  </p>
             
             {/* Norton Style CTA Button */}
             <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl rounded-full px-10 py-5 border-2 border-black transition-all duration-300 shadow-md hover:shadow-xl">
@@ -159,16 +158,16 @@ export default function Banner() {
             </button>
             
             {/* Pricing Note */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-sm max-w-lg mt-4">
+            {/* <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-sm max-w-lg mt-4">
               <p className="text-sm text-gray-700">
                 For Norton Small Business covering 10 devices. After 7 days, renews at 
                 <span className="text-yellow-600 font-bold"> $99.99</span> for the first year then 
                 <span className="font-semibold"> $179.99/year</span> thereafter. See subscription details below*
               </p>
-            </div>
+            </div> */}
 
             {/* Trust Indicators */}
-            <div className="flex items-center gap-6 mt-8">
+            {/* <div className="flex items-center gap-6 mt-8">
               <div className="flex items-center">
                 <div className="flex -space-x-2 mr-3">
                   {[1,2,3].map((i) => (
@@ -177,7 +176,7 @@ export default function Banner() {
                 </div>
                 <span className="text-sm text-gray-700 font-medium">50,000+ Businesses Protected</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Section */}
@@ -215,7 +214,7 @@ export default function Banner() {
                             <FaLock className="text-white text-lg" />
                           </div>
                           <div>
-                            <div className="font-bold text-sm">24/7 PROTECTION</div>
+                            <div className="font-bold text-sm"> PROTECTION</div>
                             <div className="text-white/80 text-xs">Active Monitoring</div>
                           </div>
                         </div>
