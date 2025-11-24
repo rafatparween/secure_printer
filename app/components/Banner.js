@@ -121,6 +121,7 @@
 
 
 // pages/index.js
+"use client";
 import { FaCheck, FaShieldAlt, FaUserShield, FaCloud, FaWifi, FaCrown, FaStar, FaLock, FaRocket } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -153,9 +154,12 @@ export default function Banner() {
               We offer the full range of Norton™ security subscriptions for individuals, families, and small businesses. All products are genuine and activated through your Norton account.  </p>
             
             {/* Norton Style CTA Button */}
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl rounded-full px-10 py-5 border-2 border-black transition-all duration-300 shadow-md hover:shadow-xl">
-              Start your free trial
-            </button>
+            <button
+  onClick={() => window.jivo_api && window.jivo_api.open()}
+  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl rounded-full px-10 py-5 border-2 border-black transition-all duration-300 shadow-md hover:shadow-xl"
+>
+  Start your free trial
+</button>
             
             {/* Pricing Note */}
             {/* <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-sm max-w-lg mt-4">
@@ -186,15 +190,15 @@ export default function Banner() {
               {/* Woman Image */}
               <div className="relative">
                 <div className="absolute -inset-4 bg-yellow-300 rounded-3xl blur-xl opacity-20"></div>
-                <div className="relative">
-                  
-                  <Image
-                    src="/sidebarpic.png"
-                    alt="Business professional"
-                    width={566}
-                    height={620}
-                    className="object-cover rounded-2xl shadow-xl border-4 border-white"
-                  />
+                <div className="relative w-[450px] h-[590px]">
+  <Image
+    src="/bannerg.jpg"
+    alt="Business professional"
+    fill
+    className="object-cover rounded-2xl shadow-xl border-4 border-white"
+    priority
+  />
+
                   
                   {/* SECURED Badge */}
                   <div className="absolute -top-3 -right-3 bg-yellow-500 text-black px-4 py-2 rounded-2xl shadow-xl border border-black/20">

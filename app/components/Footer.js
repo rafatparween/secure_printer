@@ -144,27 +144,24 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-300 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 text-sm">
-              © 2025 <span className="font-semibold text-yellow-600">EZ Tech Printer Solutions LLC</span>.
-              All rights reserved.
-            </p>
-
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/terms-conditions" className="text-gray-600 hover:text-yellow-600 text-sm">
-                TERMS & CONDITIONS
-              </Link>
-              <Link href="/activation-installation" className="text-gray-600 hover:text-yellow-600 text-sm">
-                 ACTIVATION & INSTALLATION SUPPORT
-              </Link>
-               <Link href="/renewal" className="text-gray-600 hover:text-yellow-600 text-sm">
-                  RENEWAL
-              </Link>
-              
-            </div>
-          </div>
-        </div>
+<div className="border-t border-gray-300 mt-12 pt-8">
+  <div className="flex flex-col md:flex-row items-center">
+    <p className="text-gray-600 text-sm">
+      © 2025 <span className="font-semibold text-yellow-600">EZ Tech Printer Solutions LLC</span>. All rights reserved.
+      <span className="ml-4">
+        <Link href="/terms-conditions" className="text-gray-600 hover:text-yellow-600 text-sm ml-4">
+          TERMS & CONDITIONS
+        </Link>
+        <Link href="/activation-installation" className="text-gray-600 hover:text-yellow-600 text-sm ml-4">
+          ACTIVATION & INSTALLATION SUPPORT
+        </Link>
+        <Link href="/renewal" className="text-gray-600 hover:text-yellow-600 text-sm ml-4">
+          RENEWAL
+        </Link>
+      </span>
+    </p>
+  </div>
+</div>
 
       </div>
     </footer>

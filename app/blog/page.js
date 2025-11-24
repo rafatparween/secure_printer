@@ -2,7 +2,13 @@
 
 import { useState } from "react";
 import { FaSearch, FaCalendar, FaUser, FaArrowRight, FaTag, FaShare, FaComment, FaBookmark } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
+
 import Image from "next/image";
+import Help from "../components/Help";
+import DidYouKnow from "../components/DidYouKnow";
+
+
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -84,25 +90,35 @@ export default function Blog() {
   const featuredPost = blogPosts.find(post => post.featured);
 
   return (
+    <>
+    <section
+  className="w-[1248px] h-[350px] mt-[20px] bg-cover bg-center flex items-center justify-center mx-auto rounded-2xl overflow-hidden shadow-2xl"
+  style={{ backgroundImage: "url('/woman.webp')" }}
+>
+  <div className="max-w-5xl w-full px-4">
+    <h1 className="text-4xl md:text-[43px] font-extrabold text-black mb-8">
+      What can we help you with?
+    </h1>
+
+    <div className="flex items-center bg-white rounded-full shadow-lg px-6 py-4 w-full max-w-3xl border border-gray-200">
+      <FiSearch className="text-gray-500 text-xl mr-3" />
+      <input
+        type="text"
+        placeholder="Type your questions or issue here"
+        className="w-full outline-none text-gray-700 text-lg"
+      />
+    </div>
+  </div>
+</section>
+
+<Help/>
+<DidYouKnow/>
+    
     <div className="min-h-screen bg-gradient-to-b from-white to-yellow-50">
      
       
       {/* Hero Banner */}
-      <div className="bg-gradient-to-r from-yellow-600 to-yellow-800 py-20 text-white">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="bg-white/20 p-5 rounded-2xl backdrop-blur-sm">
-              <FaBookmark className="text-5xl" />
-            </div>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-            Cybersecurity Blog
-          </h1>
-          <p className="text-yellow-100 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Expert Insights, Tips, and Guides to Keep You Protected
-          </p>
-        </div>
-      </div>
+      
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-16">
@@ -301,5 +317,6 @@ export default function Blog() {
       {/* Bottom Gradient */}
       <div className="h-3 bg-gradient-to-t from-white to-yellow-50"></div>
     </div>
+    </>
   );
 }
