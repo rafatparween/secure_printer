@@ -264,7 +264,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white border-b border-gray-200 relative z-50">
+    <header className="w-full bg-[#242424] border-b border-gray-200 relative z-50">
       {/* Top Gradient Border */}
       <div className="h-2 bg-gradient-to-b from-white to-yellow-50"></div>
 
@@ -277,7 +277,7 @@ export default function Navbar() {
             {/* Logo - Increased Size */}
             <div className="flex-shrink-0">
               <Image 
-                src="/logo1.png" 
+                src="/nortonnew.svg" 
                 alt="Secureyourpc Logo" 
                 width={220} 
                 height={80} 
@@ -292,18 +292,18 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/"
-                    className="relative text-yellow-800 py-2 px-3 transition-all duration-300 group"
+                    className="relative text-white py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
                   >
                     HOME
                     <span className="absolute bottom-0 left-0 w-full h-1 bg-yellow-600 rounded-full"></span>
-                    <span className="absolute inset-0 bg-yellow-100 rounded-lg scale-105 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></span>
+                    <span className="absolute inset-0 bg-white rounded-lg scale-105 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></span>
                   </Link>
                 </li>
 
                 <li>
                   <Link
                     href="/about"
-                    className="relative text-gray-700 py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
+                    className="relative text-white py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
                   >
                     ABOUT US
                     <span className="absolute bottom-0 left-0 w-0 h-1 bg-yellow-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
@@ -313,7 +313,7 @@ export default function Navbar() {
                  <li>
                   <Link
                     href="/Products"
-                    className="relative text-gray-700 py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
+                    className="relative text-white py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
                   >
                     PRODUCTS
                     <span className="absolute bottom-0 left-0 w-0 h-1 bg-yellow-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
@@ -324,7 +324,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/blog"
-                    className="relative text-gray-700 py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
+                    className="relative text-white py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
                   >
                     BLOG
                     <span className="absolute bottom-0 left-0 w-0 h-1 bg-yellow-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
@@ -335,7 +335,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/contact"
-                    className="relative text-gray-700 py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
+                    className="relative text-white py-2 px-3 transition-all duration-300 hover:text-yellow-700 group"
                   >
                     CONTACT US
                     <span className="absolute bottom-0 left-0 w-0 h-1 bg-yellow-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
@@ -375,7 +375,7 @@ export default function Navbar() {
       </div>
 
       {/* Bottom Gradient Border */}
-      <div className="h-2 bg-gradient-to-t from-white to-yellow-50 hidden lg:block"></div>
+      {/* <div className="h-2 bg-gradient-to-t from-white to-yellow-50 hidden lg:block"></div> */}
 
       {/* MOBILE MENU OVERLAY */}
       {menuOpen && (
