@@ -35,22 +35,22 @@ export default function ContactUs() {
       action: "Call Now",
       color: "from-green-600 to-green-700"
     },
-    {
-      icon: FaEnvelope,
-      title: "Email Us",
-      details: "support@eztechprintersolutions.com",
-      description: "Send us your questions and concerns",
-      action: "Send Email",
-      color: "from-blue-600 to-blue-700"
-    },
-    {
-      icon: FaWhatsapp,
-      title: "WhatsApp",
-      details: "+1 (808) 468-1018",
-      description: "Quick chat support via WhatsApp",
-      action: "Start Chat",
-      color: "from-green-500 to-green-600"
-    },
+    // {
+    //   icon: FaEnvelope,
+    //   title: "Email Us",
+    //   details: "support@eztechprintersolutions.com",
+    //   description: "Send us your questions and concerns",
+    //   action: "Send Email",
+    //   color: "from-blue-600 to-blue-700"
+    // },
+    // {
+    //   icon: FaWhatsapp,
+    //   title: "WhatsApp",
+    //   details: "+1 (808) 468-1018",
+    //   description: "Quick chat support via WhatsApp",
+    //   action: "Start Chat",
+    //   color: "from-green-500 to-green-600"
+    // },
     {
       icon: FaComments,
       title: "Live Chat",
@@ -91,21 +91,32 @@ export default function ContactUs() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Contact Methods Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {contactMethods.map((method, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg border border-yellow-200 p-6 text-center hover:shadow-xl transition-all duration-300 group">
-              <div className={`bg-gradient-to-r ${method.color} text-white p-4 rounded-2xl inline-flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <method.icon className="text-2xl" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{method.title}</h3>
-              <p className="text-gray-700 font-semibold mb-2">{method.details}</p>
-              <p className="text-gray-600 text-sm mb-4">{method.description}</p>
-              <button className="w-full bg-gradient-to-r from-yellow-50 to-white border border-yellow-200 text-yellow-700 py-3 rounded-xl font-semibold hover:from-yellow-100 hover:to-white hover:border-yellow-400 transition-all duration-300">
-                {method.action}
-              </button>
-            </div>
-          ))}
+        {/* Contact Methods Section with Grey Background */}
+<div className="bg-gray-100 py-16 rounded-3xl mb-20 shadow-inner">
+  <div className="flex justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl">
+      {contactMethods.map((method, index) => (
+        <div 
+          key={index} 
+          className="group bg-white rounded-2xl shadow-xl border border-yellow-100 p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden"
+        >
+          {/* Decorative Background */}
+          <div className={`absolute inset-0 bg-gradient-to-br ${method.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+          
+          <div className={`bg-gradient-to-r ${method.color} text-white p-6 rounded-2xl inline-flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg mx-auto`}>
+            <method.icon className="text-4xl" />
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">{method.title}</h3>
+          <p className="text-gray-700 font-semibold mb-2 text-lg">{method.details}</p>
+          <p className="text-gray-500 text-sm mb-5">{method.description}</p>
+          <button className="w-full bg-gradient-to-r from-gray-50 to-white border-2 border-yellow-200 text-yellow-700 py-4 rounded-xl font-semibold hover:from-yellow-50 hover:to-white hover:border-yellow-400 hover:text-yellow-800 transition-all duration-300 shadow-md hover:shadow-lg text-lg">
+            {method.action}
+          </button>
         </div>
+      ))}
+    </div>
+  </div>
+</div>
 
         {/* Contact Form & Info Section */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
@@ -156,7 +167,7 @@ export default function ContactUs() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-yellow-50 border border-yellow-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-300"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+1 (877) 889-5857"
                   />
                 </div>
                 
@@ -305,3 +316,6 @@ export default function ContactUs() {
     </div>
   );
 }
+
+
+

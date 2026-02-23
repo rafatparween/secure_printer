@@ -120,13 +120,22 @@ export default function HeroSection() {
 
             {/* HELP SECTION */}
             <div className="border-l border-gray-300 pl-6 text-left">
-              <p className="text-gray-500 text-[14px] mb-1">
-                Still not sure yet?
-              </p>
-              <p className="text-blue-600 font-semibold text-[15px] cursor-pointer hover:underline">
-                Help me choose
-              </p>
-            </div>
+  <p className="text-gray-500 text-sm mb-2">
+    Still not sure yet?
+  </p>
+
+  <div className="space-y-1">
+    <p className="text-blue-600 font-semibold text-base cursor-pointer hover:underline transition duration-200">
+      Call Us 
+    </p>
+
+    <p className="text-lg font-bold text-gray-800 hover:text-blue-600 transition duration-200 cursor-pointer">
+     +1 (877) 889-5857
+    </p>
+
+    
+  </div>
+</div>
 
           </div>
         </div>
