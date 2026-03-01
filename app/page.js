@@ -28,7 +28,6 @@ export default function Home() {
       <AdvanceProtection/>
       <NortonSmallBusinessCard/>
       <JivoChat/>
-
      
     
       

@@ -6,10 +6,10 @@ export default function HeroSection() {
     <div className="w-full bg-white">
 
       {/* ===== HERO FULL BACKGROUND IMAGE ===== */}
-      <div className="relative w-full h-[576px]">
+      <div className="relative w-full h-[600px]">
 
         <Image
-          src="/slidergirl.avif"
+          src="/sliderdiff.png"
           alt="bg"
           fill
           priority
