@@ -3,6 +3,7 @@
 import { FaDesktop, FaMobileAlt, FaShieldAlt, FaDownload, FaKey, FaCog, FaSync, FaTools, FaHeadset, FaComments } from "react-icons/fa";
 
 import Image from "next/image";
+import JivoChat from "../JivoChat";
 
 export default function ActivationSupport() {
   const supportServices = [
@@ -39,6 +40,7 @@ export default function ActivationSupport() {
   ];
 
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-b from-white to-yellow-50">
    
       
@@ -231,5 +233,7 @@ export default function ActivationSupport() {
       {/* Bottom Gradient */}
       <div className="h-3 bg-gradient-to-t from-white to-yellow-50"></div>
     </div>
+    <JivoChat/>
+    </>
   );
 }

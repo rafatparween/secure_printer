@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaHeadset, FaPaperPlane, FaWhatsapp, FaComments } from "react-icons/fa";
+import JivoChat from "../JivoChat";
 
 
 export default function ContactUs() {
@@ -68,6 +69,7 @@ export default function ContactUs() {
   ];
 
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-b from-white to-yellow-50">
      
       
@@ -314,6 +316,8 @@ export default function ContactUs() {
       {/* Bottom Gradient */}
       <div className="h-3 bg-gradient-to-t from-white to-yellow-50"></div>
     </div>
+    <JivoChat/>
+    </>
   );
 }
 

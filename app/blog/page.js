@@ -332,6 +332,7 @@ import { FiSearch } from "react-icons/fi";
 import Image from "next/image";
 import Help from "../components/Help";
 import DidYouKnow from "../components/DidYouKnow";
+import JivoChat from "../JivoChat";
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -640,6 +641,8 @@ export default function Blog() {
         {/* Bottom Gradient */}
         <div className="h-3 bg-gradient-to-t from-white to-yellow-50"></div>
       </div>
+      <JivoChat/>
+     
     </>
   );
 }
