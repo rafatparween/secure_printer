@@ -19,9 +19,6 @@ export default function Home() {
     <>
       {/* <Banner/> */}
       <NortonHero/>
-      {/* <Product/> */}
-      {/* <PrinterProductList/> */}
-      {/* <Product/> */}
       <PricingPlans/>
       <NortonPlans/>
       <TableVersion/>
