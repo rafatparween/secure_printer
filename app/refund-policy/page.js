@@ -226,7 +226,7 @@ export default function RefundPolicy() {
                 </div>
                 <p className="text-sm text-yellow-700 font-semibold mb-2">PHONE SUPPORT</p>
                 <p className="text-lg font-bold text-gray-900 group-hover:text-yellow-800 transition-colors">
-                  +1 (877) 889-5857
+                  +1 (800) 605 - 5408
                 </p>
               </div>
             </div>
