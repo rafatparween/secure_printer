@@ -71,7 +71,7 @@ export default function Help() {
         {/* Enhanced Header Section */}
         <div className="text-center mb-20 relative">
           {/* Background Decorative Elements */}
-          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-32 h-32 bg-yellow-400/20 rounded-full blur-3xl"></div>
+          {/* <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-32 h-32 bg-yellow-400/20 rounded-full blur-3xl"></div>
           <div className="absolute top-20 right-1/4 w-24 h-24 bg-amber-300/20 rounded-full blur-2xl"></div>
           
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight bg-gradient-to-r from-yellow-700 to-amber-800 bg-clip-text text-transparent">
@@ -79,10 +79,10 @@ export default function Help() {
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8 font-medium">
             Expert support for all your technical needs and product queries
-          </p>
+          </p> */}
           
           {/* Search Bar */}
-          <div className="max-w-2xl mx-auto relative">
+          {/* <div className="max-w-2xl mx-auto relative">
             <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg px-6 py-4 w-full border-2 border-yellow-200 hover:border-yellow-300 hover:shadow-xl transition-all duration-300">
               <svg className="w-6 h-6 text-yellow-600 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -96,7 +96,7 @@ export default function Help() {
                 Search
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Help Options Grid */}

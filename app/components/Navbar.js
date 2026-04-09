@@ -232,7 +232,7 @@ export default function Navbar() {
             </div>
 
             {/* DESKTOP NAV */}
-            <nav className="hidden lg:block ml-10 xl:ml-12">
+            {/* <nav className="hidden lg:block ml-10 xl:ml-12">
               <ul className="flex space-x-8 xl:space-x-10 text-[16px] xl:text-[17px] font-semibold">
 
                 {[
@@ -254,7 +254,7 @@ export default function Navbar() {
                 ))}
 
               </ul>
-            </nav>
+            </nav> */}
           </div>
 
           {/* RIGHT SIDE - Toll Free + Cart */}

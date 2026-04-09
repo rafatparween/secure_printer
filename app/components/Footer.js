@@ -95,6 +95,11 @@ const Footer = () => {
                     Contact Us
                   </Link>
                 </li>
+                 <li>
+                  <Link href="/blog" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
+                    Blog
+                  </Link>
+                </li>
                 <li>
                   <Link href="/" className="text-gray-700 hover:text-yellow-600 transition-colors duration-200">
                     Checkout

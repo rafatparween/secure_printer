@@ -251,4 +251,7 @@ export default function RefundPolicy() {
       <div className="h-3 bg-gradient-to-t from-white to-yellow-50"></div>
     </div>
   );
-}
+};
+
+
+
